@@ -1,0 +1,29 @@
+#dark-mode-indicator{
+    position: relative;
+    display: block;
+    align-self: center;
+    margin-block: auto;
+    width: 3.125em;
+    height: 1.575em;
+    background: blue;
+    isolation: isolate;
+    border-radius: 1em;
+    padding-inline: 1em;
+    background-origin: padding-box;
+}
+#dark-mode{
+    border: .1ch solid black;
+    position: absolute;
+    margin-block:auto;
+    appearance: none;
+    width: 45%;
+    aspect-ratio: 1 / 1;
+    background: red;
+    border-radius: 2em;
+    margin-block: 2.75%;
+    left: 5%;
+    transition: left 250ms ease-in-out;
+    &:checked{
+        left: 50%;
+    }
+}
