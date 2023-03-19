@@ -1,90 +1,47 @@
+@import "_themes";
 * {
     box-sizing: border-box;
     margin: 0;
+    transition-property: color, background, filter;
+    transition-duration: 800ms;
+    transition-timing-function: cubic-bezier(0.15, 0.41, 1, 0.52);
 }
+:root {
+    @include light_mode;
+    .color-invertable {
+        filter: invert(0);
+    }
+    &:has(#dark-mode:checked) {
+        @include dark_mode;
+        .color-invertable {
+            filter: invert(0.8);
+        }
+    }
+    @media (prefers-color-scheme: dark) {
+        @include dark_mode;
+        &:has(#dark-mode:checked) {
+            @include light_mode;
+            .color-invertable {
+                filter: invert(0);
+            }
+        }
+        .color-invertable {
+            filter: invert(0.8);
+        }
+    }
+}
+
 html,
 body {
     width: 100%;
     display: block;
+    background: var(--secondary);
     margin: 0;
     padding: 0;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-nav {
-    box-sizing: border-box;
-    min-height: 2.5em;
-    width: 100%;
-    background: grey;
-    margin: 0;
-    padding: 0.5ch;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    ul {
-        padding: 0;
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        height: 100%;
-        li {
-            padding-inline: 1ch;
-            display: block;
-            max-height: 100%;
-            width: min-content;
-            a {
-                font-weight: bold;
-                text-decoration: none;
-                color: white;
-                font-size: 1.125em;
-                transition: color 150ms ease-in;
-                transition: filter 200ms ease-in;
-                &:hover,
-                &:focus-within,
-                &:active {
-                    color: aquamarine;
-                    filter: drop-shadow(0 5px 5px rgb(2, 97, 97));
-                }
-                > img {
-                    margin-block: auto;
-                    height: 2em;
-                    width: auto;
-                    aspect-ratio: 1 / 1;
-                    border: 0.5ch dashed grey;
-                    border-radius: 100%;
-                    background: seashell;
-                }
-            }
-        }
-    }
-    span {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-    }
-}
-
-.contrast-button {
-    align-self: center;
-    margin-inline: 0.5em;
-    height: 2em;
-    padding: 0;
-    width: 2em;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    transition: background 200ms ease-in-out;
-    &:hover,
-    &:active,
-    &:focus-within {
-        background: white;
-    }
-    picture,
-    img {
-        padding: 0;
-        margin: 0;
-        height: 2em;
-        width: 2em;
+body{
+    @media only screen and (max-width: 33rem) {
+        padding-block-start:3em;
     }
 }

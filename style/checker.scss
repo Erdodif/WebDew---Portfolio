@@ -1,29 +1,51 @@
-#dark-mode-indicator{
+#dark-mode-indicator {
     position: relative;
     display: block;
     align-self: center;
     margin-block: auto;
     width: 3.125em;
     height: 1.575em;
-    background: blue;
+    background: var(--primary);
     isolation: isolate;
     border-radius: 1em;
     padding-inline: 1em;
     background-origin: padding-box;
+    @media only screen and (max-width: 33rem) {
+        margin-inline-start: .5em;
+        margin-inline-end:auto;
+        margin-block: 1em;
+        &::after{
+            content: "Sötét mód";
+            position: absolute;
+            left: 120%;
+            top:-40%;
+            height: 1em;
+            color: var(--primary);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 1em;
+        }
+    }
 }
-#dark-mode{
-    border: .1ch solid black;
+
+#dark-mode {
+    border: .2ch solid var(--secondary-variant);
     position: absolute;
-    margin-block:auto;
+    margin-block: auto;
     appearance: none;
     width: 45%;
     aspect-ratio: 1 / 1;
-    background: red;
+    background: var(--primary-variant);
     border-radius: 2em;
     margin-block: 2.75%;
     left: 5%;
+    bottom: 2%;
     transition: left 250ms ease-in-out;
-    &:checked{
+    &:checked {
         left: 50%;
+    }
+    @media only screen and (max-width: 33rem) {
+        bottom: 0%;
+        border: .5ch solid var(--secondary-variant);
     }
 }

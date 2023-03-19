@@ -1,0 +1,174 @@
+#menu {
+    box-sizing: border-box;
+    min-height: 2.5em;
+    user-select: none;
+    width: 100%;
+    background-color: var(--secondary-variant);
+    margin: 0;
+    padding: 0.5ch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    > ul {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 100%;
+        li {
+            padding-inline: 1ch;
+            display: block;
+            max-height: 100%;
+            width: min-content;
+            a {
+                font-weight: bold;
+                text-decoration: none;
+                color: var(--primary);
+                font-size: 1.125em;
+                transition: color 150ms ease-in;
+                transition: filter 200ms ease-in;
+                &:hover,
+                &:focus-within,
+                &:active {
+                    color: aquamarine;
+                    filter: drop-shadow(0 5px 5px rgb(2, 97, 97));
+                }
+                > img {
+                    margin-block: auto;
+                    height: 2em;
+                    width: auto;
+                    aspect-ratio: 1 / 1;
+                    border: 0.5ch dashed grey;
+                    border-radius: 100%;
+                    background: seashell;
+                }
+            }
+        }
+    }
+    span {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+    #menu-toogle {
+        display: none;
+    }
+    @media only screen and (max-width: 55rem) {
+    }
+    @media only screen and (max-width: 33rem) {
+        margin: 0;
+        background-color: var(--secondary-variant);
+        position: fixed;
+        top:0;
+        ul,
+        span {
+            display: none;
+        }
+        #menu-toogle {
+            display: block;
+            appearance: none;
+            border: 0;
+            background: 0;
+            &,
+            img {
+                width: 3.5em;
+                height: 3.5em;
+            }
+        }
+        picture[data-state="back"]{
+            cursor: pointer;
+            display: none;
+        }
+        picture[data-state="hamburger"]{
+            cursor: pointer;
+            display: block;
+        }
+        &.focused{
+            li:first-child{
+                display: none;
+            }
+            picture[data-state="hamburger"]{
+                display: none;
+            }
+            picture[data-state="back"]{
+                display: block;
+            }
+            font-size: 2em;
+            &,
+            > ul,
+            > span {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: baseline;
+                > li > a > img {
+                    display: none;
+                }
+                li,
+                label,
+                button {
+                    padding-block: 1ch;
+                }
+            }
+            #menu-toogle {
+                position: relative;
+                &,
+                > img {
+                    width: 5em !important;
+                    height: 5em !important;
+                }
+            }
+        }
+    }
+}
+
+.contrast-button {
+    align-self: center;
+    margin-inline: 0.5em;
+    height: 2em;
+    padding: 0;
+    width: 2em;
+    cursor: pointer;
+    background: transparent;
+    position: relative;
+    border: none;
+    transition: background 200ms ease-in-out;
+    &:hover,
+    &:active,
+    &:focus-within img {
+        background: white;
+    }
+    picture,
+    img {
+        position: absolute;
+        inset:0;
+        height: 2em;
+        width: 2em;
+    }
+    @media only screen and (max-width: 33rem) {
+        margin-inline-start: 2em;
+        img {
+            width: 4em;
+            height: 4em;
+        }
+        margin-block: 1em;
+        width: 4em;
+        height: 4em;
+        margin-inline-end: auto;
+        &::after {
+            content: "Magas kontraszt mód";
+            position: absolute;
+            left: 120%;
+            top: -30%;
+            height: 1em;
+            font-size: 2em;
+            width: 15ch;
+            color: var(--primary);
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+    }
+}

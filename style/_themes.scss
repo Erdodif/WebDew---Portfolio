@@ -1,0 +1,22 @@
+/*$light-primary: ;
+$light-primary-variant: ;
+$light-secondary: ;
+$light-secondary-variant: ;
+$dark-primary: ;
+$dark-primary-variant: ;
+$dark-secondary: ;
+$dark-secondary-variant: ;
+*/
+@mixin light_mode {
+    --primary: #4d4d4d;
+    --secondary: #fff4e0;
+    --primary-variant: #b46060;
+    --secondary-variant: #ffbf9b;
+}
+
+@mixin dark_mode {
+    --primary: #cbe4de;
+    --secondary: #2c3333;
+    --primary-variant: #0e8388;
+    --secondary-variant: #2e4f4f;
+}
