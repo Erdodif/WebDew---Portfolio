@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kotlin - Főoldal</title>
+    <meta name="description" content="Erdődi Fülöp weboldala, ELTE Webfejlesztés gyakorlatra.">
+    <meta name="theme-color" content="#0e8388">
+    <title>Főoldal</title>
+    <link rel="apple-touch-icon" href="./res/icons/maskable/maskable_icon.png">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./style/checker.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/paragraph.css">
+    <script src="./logic/index.js"></script>
 </head>
+
 <body>
-    
+    <nav id="menu" tabindex="-10">
+        <button id="menu-toogle" tabindex="0" accesskey="m">
+            <picture data-state="hamburger" class="color-invertable">
+                <source src="./res/icons/hamburger-menu-icon.png">
+                <img src="./res/icons/hamburger-menu-icon.svg" alt="Menü">
+            </picture>
+            <picture data-state="back" class="color-invertable">
+                <source src="./res/icons/back_arrow_icon.png">
+                <img src="./res/icons/back_arrow_icon.svg" alt="Menü">
+            </picture>
+        </button>
+        <ul>
+            <li>
+                <a href="">
+                    <img src="./layout-tester/person_holder.png" alt="Personal icon" loading="lazy">
+                </a>
+            </li>
+            <li>
+                <a href="./index.html" title="Főoldal" target="_self" accesskey="F">Főoldal</a>
+            </li>
+            <li>
+                <a href="./pages/news.html" title="Hírek és Történetek" target="_self" accesskey="H">Hírek</a>
+            </li>
+            <li>
+                <a href="./pages/rumadai.html" title="Rumadai - Elképzeléstől a megvalósításig" target="_self" accesskey="R">Rumadai</a>
+            </li>
+            <li>
+                <a href="./pages/gallery.html" title="Galéria" target="_self" accesskey="G">Galéria</a>
+            </li>
+        </ul>
+        <span>
+            <label for="dark-mode" id="dark-mode-indicator">
+                <input type="checkbox" name="dark-mode" id="dark-mode" accesskey="S">
+            </label>
+            <button class="contrast-button" accesskey="K">
+                <picture class="color-invertable">
+                    <source src="../res/icons/contrast-32.svg">
+                    <img src="../res/icons/contrast-32-512.png" alt="Magas kontrasztú mód">
+                </picture>
+            </button>
+        </span>
+    </nav>
+    <main>
+    </main>
 </body>
+
 </html>
