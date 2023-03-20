@@ -1,0 +1,8 @@
+.lazy_mason{
+    columns: 3; /*needs to be done in 2 other layout*/
+    column-gap: .575em;
+
+    > * {
+        break-inside: avoid;
+    }
+}
