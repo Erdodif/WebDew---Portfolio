@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/nav.css">
     <link rel="stylesheet" href="./style/paragraph.css">
+    <link rel="stylesheet" href="./style/holders.css">
+    <link rel="stylesheet" href="./style/footer.css">
     <script src="./logic/index.js"></script>
 </head>
 
@@ -32,7 +34,7 @@
         <ul>
             <li>
                 <a href="">
-                    <img src="./layout-tester/person_holder.png" alt="Personal icon" loading="lazy">
+                    <img src="./layout-tester/person_holder.webp" alt="Personal icon" loading="lazy">
                 </a>
             </li>
             <li>
@@ -42,7 +44,8 @@
                 <a href="./pages/news.html" title="Hírek és Történetek" target="_self" accesskey="H">Hírek</a>
             </li>
             <li>
-                <a href="./pages/rumadai.html" title="Rumadai - Elképzeléstől a megvalósításig" target="_self" accesskey="R">Rumadai</a>
+                <a href="./pages/rumadai.html" title="Rumadai - Elképzeléstől a megvalósításig" target="_self"
+                    accesskey="R">Rumadai</a>
             </li>
             <li>
                 <a href="./pages/gallery.html" title="Galéria" target="_self" accesskey="G">Galéria</a>
@@ -61,6 +64,118 @@
         </span>
     </nav>
     <main>
+        <div class="main-image-holder">
+            <picture>
+                <source media="(max-width:33rem)" srcset="./res/images/EFG_5763_Edit_01.webp">
+                <source media="(max-width:55rem)" srcset="./res/images/EFG_5763_Edit_02.webp">
+                <img src="./res/images/EFG_5763_Edit.webp" alt="Kezdőkép">
+            </picture>
+        </div>
+        <h1>
+            Rólam
+        </h1>
+        <section>
+            <p>
+                Azoknak, akik nem ismernének, Erdődi Fülöp vagyok (aka. Kotlin), Szoftverfejlesztő és tesztelő
+                technikus, valamint az ELTE-IK aktív hallgatója.
+                Tanulmányim mellett görkorcsolyázok, projektekhez programozok, valamint hobbifotózok.
+            </p>
+        </section>
+        <section>
+            <div class="card-holder">
+                <div class="card">
+                    <div class="card-header-image">
+                        <img src="./res/images/EFG_4951_93_Remastered.webp" alt="">
+                    </div>
+                    <h3>
+                        Proghírek
+                    </h3>
+                    <p>
+                        Kotlin hírportálja. Közeli események és fontos mérföldkövek egy helyen.
+                        Történetek, történelem IK-sokról nem csak IK-soknak.
+                    </p>
+                    <button>
+                        Hírekhez
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="card-header-image">
+                        <img src="./res/images/EFG_5763_Edit_03.webp" alt="">
+                    </div>
+                    <h3>
+                        Képek
+                    </h3>
+                    <p>
+
+                    </p>
+                    <button>
+                        Galériába
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="card-header-image">
+                        <img src="./res/images/rumadai_header.webp" alt="">
+                    </div>
+                    <h3>
+                        Rumadai
+                    </h3>
+                    <p>
+                        Egy magányos szekrény útja Szigetszentmiklósról egészen az IK szemeszternyitó eseményéig.
+                    </p>
+                    <button>
+                        Rumadai
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>
+
+            </h2>
+            <p>
+
+            </p>
+            <button>
+
+            </button>
+        </section>
+        <footer>
+            <div>
+                <h4>
+                    Fun Fact
+                </h4>
+                <p id="fun-fact">
+                    Több FunFact-et láthatsz, ha online módban böngészel...
+                </p>
+                <button id="next-fun-fact">
+                    Következő
+                </button>
+            </div>
+            <div>
+                <h4>
+                    ELTE - Disclaimer
+
+                </h4>
+                <p>
+                    Ez az oldal egy informatív bemutatkozó, valamint a IP-18WF1EG WebFejlesztés tantárgy projekt oldala.
+                    Az oldal tartalmi követelményei elérhetők a tantárgy oldalán.
+                </p>
+
+            </div>
+            <div>
+                <h4>
+                    Linkek
+
+                </h4>
+                <div class="footer-link-holder">
+                    <a href="">Github</a>
+                    <a href="">Neptun</a>
+                    <a href=""><img src="" alt=""></a>
+                    <a href=""><img src="" alt=""></a>
+                    <a href=""><img src="" alt=""></a>
+                </div>
+            </div>
+        </footer>
     </main>
 </body>
 
