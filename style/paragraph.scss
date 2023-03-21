@@ -1,7 +1,7 @@
 h1,h2,h3,h4,h5,h6,p,td,th{
     color: var(--primary);
 }
-h1{
+h1,h2{
     text-align: center;
     margin-block:1em;
 }
@@ -13,4 +13,10 @@ p{
     padding-inline:2em;
     margin-block:1em;
     text-align: justify;
+    @media only screen and (max-width: 55rem) {
+        padding-inline: 1em;
+    }
+    @media only screen and (max-width: 33rem) {
+        padding-inline: 1ch;
+    }
 }

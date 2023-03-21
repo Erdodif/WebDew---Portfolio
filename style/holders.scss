@@ -41,53 +41,72 @@
 
 section {
     margin-inline: calc(1em + 3vw);
+    margin-block:1em;
+    @media only screen and (max-width: 55rem) {
+        margin-inline: calc(.525em + 1vw);
+    }
+    @media only screen and (max-width: 33rem) {
+        margin-inline: 2ch;
+    }
 }
 
 main {
     //margin-inline: calc(1em + 3vw)
 }
 
-.card-holder{
-    margin-inline:auto;
+.card-holder {
+    margin-block: 1em;
+    margin-inline: auto;
     justify-content: baseline;
     display: columns;
     columns: 3;
     break-inside: avoid;
     max-width: 60rem;
     .card {
-        margin-block:1em;
+        margin-block: 1em;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
         justify-content: baseline;
         break-inside: avoid;
-        .card-header-image {
-            img {
-                border-radius: 100%;
-                border: .225em solid var(--primary);
-                width: 5em;
-                object-fit: cover;
-                object-position: center;
-                image-rendering: optimizeQuality;
-                aspect-ratio: 1 / 1;
-            }
+        .card-header-image img {
+            border-radius: 100%;
+            border: 0.225em solid var(--primary);
+            max-width: 10em;
+            width: auto;
+            object-fit: cover;
+            object-position: center;
+            image-rendering: optimizeQuality;
+            aspect-ratio: 1 / 1;
         }
     }
     @media only screen and (max-width: 55rem) {
-        display: columns;
-        columns: 2;
-        break-inside: avoid;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        .card {
+            max-width: 50%;
+            width: 40ch;
+            .card-header-image img {
+                border-radius: 1.5em;
+            }
+        }
     }
     @media only screen and (max-width: 33rem) {
-        display: columns;
-        columns: 1;
-        break-inside: avoid;
-        .card{
-            margin-block-end:3em;
-            width: 80%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        .card {
+            margin-block-end: 3em;
+            max-width: 90%;
+            width: auto;
             margin-inline: auto;
+            .card-header-image img {
+                border-radius: 1em;
+            }
         }
     }
 }
-
