@@ -1,0 +1,93 @@
+.main-image-holder {
+    background: var(--primary-variant);
+    width: 100%;
+    margin-inline: 0;
+    padding-block: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    picture {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    img {
+        border: 0.175em solid var(--primary);
+        align-self: center;
+        margin-inline: auto;
+        @media only screen and (max-width: 33rem) {
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+            width: auto;
+            height: auto;
+        }
+        @media only screen and (max-width: 55rem) {
+            margin-inline: auto;
+            padding: 0;
+            width: auto;
+            max-width: 80%;
+            height: auto;
+        }
+        max-width: 60rem;
+        width: 100%;
+        height: auto;
+    }
+}
+
+section {
+    margin-inline: calc(1em + 3vw);
+}
+
+main {
+    //margin-inline: calc(1em + 3vw)
+}
+
+.card-holder{
+    margin-inline:auto;
+    justify-content: baseline;
+    display: columns;
+    columns: 3;
+    break-inside: avoid;
+    max-width: 60rem;
+    .card {
+        margin-block:1em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: baseline;
+        break-inside: avoid;
+        .card-header-image {
+            img {
+                border-radius: 100%;
+                border: .225em solid var(--primary);
+                width: 5em;
+                object-fit: cover;
+                object-position: center;
+                image-rendering: optimizeQuality;
+                aspect-ratio: 1 / 1;
+            }
+        }
+    }
+    @media only screen and (max-width: 55rem) {
+        display: columns;
+        columns: 2;
+        break-inside: avoid;
+    }
+    @media only screen and (max-width: 33rem) {
+        display: columns;
+        columns: 1;
+        break-inside: avoid;
+        .card{
+            margin-block-end:3em;
+            width: 80%;
+            margin-inline: auto;
+        }
+    }
+}
+

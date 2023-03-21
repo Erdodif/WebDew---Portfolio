@@ -1,14 +1,13 @@
-h1,h2,h3,h4,h5,h6,p{
+h1,h2,h3,h4,h5,h6,p,td,th{
     color: var(--primary);
 }
 h1{
     text-align: center;
     margin-block:1em;
 }
-main{
-    margin-inline: calc(1em + 3vw)
-}
 p{
+    max-width: 60rem;
+    margin-inline:auto;
     font-size: 1.125em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-inline:2em;
