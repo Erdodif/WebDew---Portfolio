@@ -76,6 +76,12 @@ footer {
         img{
             width: 2.725em;
             height: auto;
+            &:hover, &:focus, &:focus-within{
+                filter: unset;
+                @media (prefers-color-scheme: dark) {
+                    filter: invert(1);
+                }
+            }
         }
     }
 }

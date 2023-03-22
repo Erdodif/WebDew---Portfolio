@@ -61,6 +61,7 @@
     @media only screen and (max-width: 33rem) {
         margin: 0;
         background-color: var(--secondary-variant);
+        z-index: 999 !important;
         position: fixed;
         top:0;
         ul,
@@ -74,8 +75,8 @@
             background: 0;
             &,
             img {
-                width: 3.5em;
-                height: 3.5em;
+                width: 2em;
+                height: 2em;
             }
         }
         picture[data-state="back"]{
@@ -87,6 +88,8 @@
             display: block;
         }
         &.focused{
+            height: 100vh;
+            overflow-y: auto;
             li:first-child{
                 display: none;
             }

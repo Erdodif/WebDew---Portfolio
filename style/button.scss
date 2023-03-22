@@ -16,7 +16,7 @@ button.designed{
     transition-property: text,border,background-color,filter,transform;
     transition-duration: 70ms;
     filter: drop-shadow(.2em .275em .275em var(--primary-variant));
-    &:hover{
+    &:hover, &:focus, &:focus-within{
         //color: var(--secondary);
         background: var(--secondary-variant);
         border-color: var(--primary);
@@ -28,7 +28,7 @@ button.designed{
         background: var(--primary);    
         border: .3ch solid var(--primary-variant);
         filter: drop-shadow(.2em .275em .275em var(--primary));
-        &:hover{
+        &:hover, &:focus, &:focus-within{
             color: var(--primary);
             background: var(--secondary-variant);
             border-color: var(--primary-variant);
