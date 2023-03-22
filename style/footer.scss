@@ -60,4 +60,22 @@ footer {
             border-block: 0.175em solid var(--secondary);
         }
     }
+    > div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .footer-link-holder{
+        padding-inline:1em;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: max-content;
+        margin-block:auto;
+        img{
+            width: 2.725em;
+            height: auto;
+        }
+    }
 }
