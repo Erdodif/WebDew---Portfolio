@@ -1,0 +1,39 @@
+button.designed{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    appearance: none;
+    cursor: pointer;
+    width: fit-content;
+    margin-inline: auto;
+    font-size: 1em;
+    font-weight: bold;
+    padding-inline: 1em;
+    padding-block: .275em;
+    border-radius: .475em;
+    margin-block: .5em;
+    color: var(--primary);
+    background: var(--primary-variant);    
+    border: .3ch solid var(--primary);
+    transition-property: text,border,background-color,filter,transform;
+    transition-duration: 70ms;
+    filter: drop-shadow(.2em .275em .275em var(--primary-variant));
+    &:hover{
+        //color: var(--secondary);
+        background: var(--secondary-variant);
+        border-color: var(--primary);
+        transform: translateY( .275em);
+        filter: drop-shadow(0 0 0 var(--primary-variant));
+    }
+    &.inverted{
+        color: var(--secondary);
+        background: var(--primary);    
+        border: .3ch solid var(--primary-variant);
+        filter: drop-shadow(.2em .275em .275em var(--primary));
+        &:hover{
+            color: var(--primary);
+            background: var(--secondary-variant);
+            border-color: var(--primary-variant);
+            transform: translateY( .275em);
+            filter: drop-shadow(0 0 0 var(--primary));
+        }
+    }
+}
