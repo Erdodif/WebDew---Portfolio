@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./style/paragraph.css">
     <link rel="stylesheet" href="./style/holders.css">
     <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/button.css">
     <script src="./logic/index.js"></script>
 </head>
 
@@ -55,12 +56,6 @@
             <label for="dark-mode" id="dark-mode-indicator">
                 <input type="checkbox" name="dark-mode" id="dark-mode" accesskey="S">
             </label>
-            <button class="contrast-button" accesskey="K">
-                <picture class="color-invertable">
-                    <source src="../res/icons/assets/contrast-32.svg">
-                    <img src="../res/icons/assets/contrast-32-512.png" alt="Magas kontrasztú mód">
-                </picture>
-            </button>
         </span>
     </nav>
     <main>
@@ -95,9 +90,9 @@
                     </h3>
                     <p>
                         Kotlin hírportálja. Közeli események és fontos mérföldkövek egy helyen.
-                        Történetek, történelem IK-sokról nem csak IK-soknak.
+                        Kiemelt projektjeim összefoglalója.
                     </p>
-                    <button>
+                    <button class="designed">
                         Hírekhez
                     </button>
                 </div>
@@ -111,7 +106,7 @@
                     <p>
                         Apró betekintés egy hobbifotós mindennapjaiba. Válogatott képgaléria portréktól az informatív képeken át egészen a absztrakt modern képekig.
                     </p>
-                    <button>
+                    <button class="designed">
                         Galériába
                     </button>
                 </div>
@@ -125,7 +120,7 @@
                     <p>
                         Egy magányos szekrény útja Szigetszentmiklósról egészen az IK szemeszternyitó eseményéig.
                     </p>
-                    <button>
+                    <button class="designed">
                         Rumadai
                     </button>
                 </div>
@@ -150,32 +145,27 @@
                 <p id="fun-fact">
                     Több FunFact-et láthatsz, ha online módban böngészel...
                 </p>
-                <button id="next-fun-fact">
+                <button id="next-fun-fact" class="designed inverted">
                     Következő
                 </button>
             </div>
             <div>
                 <h4>
                     ELTE - Disclaimer
-
                 </h4>
                 <p>
                     Ez az oldal egy informatív bemutatkozó, valamint a IP-18WF1EG WebFejlesztés tantárgy projekt oldala.
                     Az oldal tartalmi követelményei elérhetők a tantárgy oldalán.
                 </p>
-
             </div>
             <div>
                 <h4>
                     Linkek
-
                 </h4>
                 <div class="footer-link-holder">
-                    <a href="https://github.com/Erdodif">Github</a>
-                    <a href="">Neptun</a>
-                    <a href=""><img src="" alt=""></a>
-                    <a href=""><img src="" alt=""></a>
-                    <a href=""><img src="" alt=""></a>
+                    <a href="https://github.com/Erdodif" title="Github"><img src="./res/icons/assets/github.svg" alt="Github" class="color-invertable"></a>
+                    <a href="https://www.facebook.com/Erdodif/" title="Facebook"><img src="./res/icons/assets/facebook.svg" alt="Facebook" class="color-invertable"></a>
+                    <a href="mailto:erdodif@gmail.com" title="E-mail"><img src="./res/icons/assets/email.svg" alt="E-mail" class="color-invertable"></a>
                 </div>
             </div>
         </footer>
