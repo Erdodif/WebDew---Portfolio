@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Erdődi Fülöp weboldala, ELTE Webfejlesztés gyakorlatra.">
+    <meta name="author" content="Erdődi Fülöp (ZHS9U7)">
+    <meta name="description" content="WebDev Projekt - Kotlin bemutatkozó">
+    <meta name="date.created" content="2022-09-25">
+    <meta name="date.available" content="2022-09-25">
+    <link rel="shortcut icon" href="./res/icons/maskable/maskable_icon.png" type="image/x-icon">
     <meta name="theme-color" content="#0e8388">
     <title>Főoldal</title>
     <link rel="apple-touch-icon" href="./res/icons/maskable/maskable_icon.png">
@@ -34,7 +38,7 @@
         </button>
         <ul>
             <li>
-                <a href="">
+                <a href="./index.html">
                     <img src="./res/icons/assets/personal.webp" alt="Personal icon" loading="lazy">
                 </a>
             </li>
@@ -59,7 +63,7 @@
         </span>
     </nav>
     <main>
-        <div class="main-image-holder">
+        <div class="main-image-holder" id="headline">
             <picture>
                 <source media="(max-width:33rem)" srcset="./res/images/EFG_5763_Edit_01.webp">
                 <source media="(max-width:55rem)" srcset="./res/images/EFG_5763_Edit_02.webp">
@@ -92,9 +96,11 @@
                         Kotlin hírportálja. Közeli események és fontos mérföldkövek egy helyen.
                         Kiemelt projektjeim összefoglalója.
                     </p>
-                    <button class="designed">
-                        Hírekhez
-                    </button>
+                    <a href="./pages/news.html">
+                        <button class="designed">
+                            Hírekhez
+                        </button>
+                    </a>
                 </div>
                 <div class="card">
                     <div class="card-header-image">
@@ -104,11 +110,14 @@
                         Képek
                     </h3>
                     <p>
-                        Apró betekintés egy hobbifotós mindennapjaiba. Válogatott képgaléria portréktól az informatív képeken át egészen a absztrakt modern képekig.
+                        Apró betekintés egy hobbifotós mindennapjaiba. Válogatott képgaléria portréktól az informatív
+                        képeken át egészen a absztrakt modern képekig.
                     </p>
-                    <button class="designed">
-                        Galériába
-                    </button>
+                    <a href="./pages/gallery.html">
+                        <button class="designed">
+                            Galériába
+                        </button>
+                    </a>
                 </div>
                 <div class="card">
                     <div class="card-header-image">
@@ -120,9 +129,11 @@
                     <p>
                         Egy magányos szekrény útja Szigetszentmiklósról egészen az IK szemeszternyitó eseményéig.
                     </p>
-                    <button class="designed">
-                        Rumadai
-                    </button>
+                    <a href="./pages/rumadai.html">
+                        <button class="designed">
+                            Rumadai
+                        </button>
+                    </a>
                 </div>
             </div>
         </section>
@@ -137,39 +148,42 @@
 
             </button>
         </section>
-        <footer>
-            <div>
-                <h4>
-                    Fun Fact
-                </h4>
-                <p id="fun-fact">
-                    Több FunFact-et láthatsz, ha online módban böngészel...
-                </p>
-                <button id="next-fun-fact" class="designed inverted">
-                    Következő
-                </button>
-            </div>
-            <div>
-                <h4>
-                    ELTE - Disclaimer
-                </h4>
-                <p>
-                    Ez az oldal egy informatív bemutatkozó, valamint a IP-18WF1EG WebFejlesztés tantárgy projekt oldala.
-                    Az oldal tartalmi követelményei elérhetők a tantárgy oldalán.
-                </p>
-            </div>
-            <div>
-                <h4>
-                    Linkek
-                </h4>
-                <div class="footer-link-holder">
-                    <a href="https://github.com/Erdodif" title="Github"><img src="./res/icons/assets/github.svg" alt="Github" class="color-invertable"></a>
-                    <a href="https://www.facebook.com/Erdodif/" title="Facebook"><img src="./res/icons/assets/facebook.svg" alt="Facebook" class="color-invertable"></a>
-                    <a href="mailto:erdodif@gmail.com" title="E-mail"><img src="./res/icons/assets/email.svg" alt="E-mail" class="color-invertable"></a>
-                </div>
-            </div>
-        </footer>
     </main>
+    <footer>
+        <div>
+            <h4>
+                Fun Fact
+            </h4>
+            <p id="fun-fact">
+                Több FunFact-et láthatsz, ha online módban böngészel...
+            </p>
+            <button id="next-fun-fact" class="designed inverted">
+                Következő
+            </button>
+        </div>
+        <div>
+            <h4>
+                ELTE - Disclaimer
+            </h4>
+            <p>
+                Ez az oldal egy informatív bemutatkozó, valamint a IP-18WF1EG WebFejlesztés tantárgy projekt oldala.
+                Az oldal tartalmi követelményei elérhetők a tantárgy oldalán.
+            </p>
+        </div>
+        <div>
+            <h4>
+                Linkek
+            </h4>
+            <div class="footer-link-holder">
+                <a href="https://github.com/Erdodif" title="Github"><img src="./res/icons/assets/github.svg"
+                        alt="Github" class="color-invertable"></a>
+                <a href="https://www.facebook.com/Erdodif/" title="Facebook"><img src="./res/icons/assets/facebook.svg"
+                        alt="Facebook" class="color-invertable"></a>
+                <a href="mailto:erdodif@gmail.com" title="E-mail"><img src="./res/icons/assets/email.svg" alt="E-mail"
+                        class="color-invertable"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
