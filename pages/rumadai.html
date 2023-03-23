@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Erdődi Fülöp (ZHS9U7)">
-    <meta name="description" content="Számítógépes rendszerek beadandó - a zöldremosás művészete">
+    <meta name="description" content="WebDev Projekt - Rumadai Reloaded">
     <meta name="date.created" content="2022-09-25">
     <meta name="date.available" content="2022-09-25">
-    <link rel="shortcut icon" href="./res/images/favicon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./res/rumadai/images/favicon.jpg" type="image/x-icon">
     <meta name="theme-color" content="#0e8388">
     <title>Rumadai - Elképzeléstől a valóságig</title>
-    <link rel="apple-touch-icon" href="./res/icons/maskable/maskable_icon.png">
+    <link rel="apple-touch-icon" href="../res/icons/maskable/maskable_icon.png">
     <link rel="stylesheet" href="./res/rumadai/style/index.css" />
     <link rel="manifest" href="../manifest.json">
     <link rel="stylesheet" href="../style/checker.css">
@@ -21,26 +21,68 @@
     <link rel="stylesheet" href="../style/paragraph.css">
     <link rel="stylesheet" href="../style/holders.css">
     <link rel="stylesheet" href="../style/footer.css">
-    <script src="./logic/index.js"></script>
+    <link rel="stylesheet" href="../style/button.css">
+    <script src="../logic/index.js"></script>
 </head>
 
 <body>
-    <div id="content-wrap">
-        <div id="headline">
-            <h1>
-                Rumadai - Elképzeléstől a valóságig
-            </h1>
-            <img id="header-image" src="./res/images/header_image.jpg" alt="Rumadai borítókép" loading="lazy"
-                title="With the Ruma-Ruma-Ruma track">
+    <nav id="menu" tabindex="-10">
+        <button id="menu-toogle" tabindex="0" accesskey="m">
+            <picture data-state="hamburger" class="color-invertable">
+                <source src="../res/icons/assets/hamburger-menu-icon.png">
+                <img src="../res/icons/assets/hamburger-menu-icon.svg" alt="Menü">
+            </picture>
+            <picture data-state="back" class="color-invertable">
+                <source src="../res/icons/assets/back_arrow_icon.png">
+                <img src="../res/icons/assets/back_arrow_icon.svg" alt="Menü">
+            </picture>
+        </button>
+        <ul>
+            <li>
+                <a href="../index.html">
+                    <img src="../res/icons/assets/personal.webp" alt="Personal icon" loading="lazy">
+                </a>
+            </li>
+            <li>
+                <a href="../index.html" title="Főoldal" target="_self" accesskey="F">Főoldal</a>
+            </li>
+            <li>
+                <a href="./news.html" title="Hírek és Történetek" target="_self" accesskey="H">Hírek</a>
+            </li>
+            <li>
+                <a href="./rumadai.html" title="Rumadai - Elképzeléstől a megvalósításig" target="_self"
+                    accesskey="R">Rumadai</a>
+            </li>
+            <li>
+                <a href="./gallery.html" title="Galéria" target="_self" accesskey="G">Galéria</a>
+            </li>
+        </ul>
+        <span>
+            <label for="dark-mode" id="dark-mode-indicator">
+                <input type="checkbox" name="dark-mode" id="dark-mode" accesskey="S">
+            </label>
+        </span>
+    </nav>
+    <main>
+        <div class="main-image-holder">
+            <picture>
+                <img id="header-image" src="./res/rumadai/images/header_image.jpg" alt="Rumadai borítókép"
+                    loading="lazy" title="With the Ruma-Ruma-Ruma track">
+            </picture>
         </div>
-        <main>
+        <h1>
+            Rumadai - Elképzeléstől a valóságig
+        </h1>
+        <section>
             <p>
                 2022 decemberén a <b><i>HabzIK</i></b> esemény szervezésekor egy díszletes animátor elszólta magát:
                 <i>"Csináljuk meg a Rumadai-t"</i> Itt kezdődött meg történetünk.
             </p>
-            <h2>
-                Az előkészületek
-            </h2>
+        </section>
+        <h2>
+            Az előkészületek
+        </h2>
+        <section>
             <h3>
                 HabzIk
             </h3>
@@ -57,8 +99,10 @@
                         között, ezzel meg is alakult a kommunikáció, állomás és díszítő csapat.
                     </p>
                 </div>
-                <img src="res/images/HabzIk.jpg" alt="HabzIK" title="HabzIK esemény 2023 Mácrius 3">
+                <img src="res/rumadai/images/HabzIk.jpg" alt="HabzIK" title="HabzIK esemény 2023 Mácrius 3">
             </div>
+        </section>
+        <section>
             <h3>
                 Az ötlet
             </h3>
@@ -71,9 +115,13 @@
                 ötlete nem is származhatott volna mástól. Az igazán meglepő inkább az elképzelés népszerűsége volt a
                 csapatban, és a véletlen alkotta poén hamar egy komoly díszlet tervvé vált.
             </p>
-            <h2>
-                A "Szekrény" útja a kampuszra
-            </h2>
+        <hr>
+        </section>
+        <h2>
+            A "Szekrény" útja a kampuszra
+        </h2>
+        <section>
+
             <h3>
                 A hirdetés
             </h3>
@@ -85,6 +133,8 @@
                 Mint utólag kiderült, az eladó ismeretségben ált az egyik szervezővel, így könnyen elintézhető volt a
                 találkozó.
             </p>
+        </section>
+        <section>
             <h3>
                 Gauss a héven
             </h3>
@@ -110,12 +160,15 @@
                         tömegközlekedéssel, biztosan nemet mondanának. Pöriék viszont kiálták e próbát a Rumadai-ért.
                     </p>
                 </div>
-                <img src="res/images/memories/Hev.jpg" alt="Élet a héven" id="elet-a-heven"
+                <img src="res/rumadai/images/memories/Hev.jpg" alt="Élet a héven" id="elet-a-heven"
                     title="Pöri, Soóki és Kotlin a héven">
             </div>
-            <h2>
-                A megvalósítás
-            </h2>
+            <hr>
+        </section>
+        <h2>
+            A megvalósítás
+        </h2>
+        <section>
             <h3>
                 Az új csapat
             </h3>
@@ -124,26 +177,48 @@
             </p>
             <p>
                 A decemberi állapot szerint még csak a lapok voltak meg, nem volt meg a fej kivágva, nem volt lába, de
-                még csak meg se volt festve. 2 nap elég volt arra, hogy a csoda történjen, és megszülessen a műalkotásunk.
+                még csak meg se volt festve. 2 nap elég volt arra, hogy a csoda történjen, és megszülessen a
+                műalkotásunk.
             </p>
             <div class="image-holder">
-                <img src="res/images/memories/on_the_go.jpg" alt="VillamosozIK" title="VillamosozIK">
-                <img src="res/images/memories/rumadai_projected.jpg" alt="Projektoros tervezés" title="Projektoros tervezés">
-                <img src="res/images/memories/work_4.jpg" alt="AlapozIK" title="AlapozIK">
+                <img src="res/rumadai/images/memories/on_the_go.jpg" alt="VillamosozIK" title="VillamosozIK">
+                <img src="res/rumadai/images/memories/rumadai_projected.jpg" alt="Projektoros tervezés"
+                    title="Projektoros tervezés">
+                <img src="res/rumadai/images/memories/work_4.jpg" alt="AlapozIK" title="AlapozIK">
             </div>
+        </section>
+        <section>
+            <h3>
+                Jelen
+            </h3>
+            <p>
+                Az utolsó héten a projekt átlépett a végső fázisba, és csak az utolsó simítások kellettek ahhoz, hogy
+                szállítható állapotába kerüljön.
+            </p>
+            <p>
+                Az eseményen hatalmas sikert aratott a fotófal, ami jelenleg a <i>HÖK</i> birtokában van, esélyt adva
+                arra, hogy az
+                <i>ELTE</i> rendezvényeinek tartós kelléke és díszlete lehessen.
+            </p>
+            <hr>
+        </section>
+        <section>
             <h3>
                 Végszó
             </h3>
             <p>
-                Mindez nem sikerült volna Pöri, Soóki, Doboz és KatieSz nélkül. Velük minden lehetetlen csak egy következő cél volt, köszönöm munkájukat és támogatásukat. 
+                Mindez nem sikerült volna Pöri, Soóki, Doboz és KatieSz nélkül. Velük minden lehetetlen csak egy
+                következő cél volt, köszönöm munkájukat és támogatásukat.
             </p>
             <p>
                 <i>Kotlin out.</i>
             </p>
+        </section>
+        <section>
             <h3>
                 A Rumadai Achievement-ek
             </h3>
-            <table>
+            <table class="rumadai-table">
                 <tr>
                     <td>
                         20+
@@ -177,21 +252,44 @@
                     </td>
                 </tr>
             </table>
-            <h2>It's alright, 'cause we never say goodbye...</h2>
-        </main>
-        <div class="link-button">
-            <a href="https://www.youtube.com/watch?v=yPGGr_4c1LU" target="_blank">Button</a>
+        </section>
+        <h2>It's alright, 'cause we never say goodbye...</h2>
+    </main>
+    <footer>
+        <div>
+            <h4>
+                Fun Fact
+            </h4>
+            <p id="fun-fact">
+                Több FunFact-et láthatsz, ha online módban böngészel...
+            </p>
+            <button id="next-fun-fact" class="designed inverted">
+                Következő
+            </button>
         </div>
-        <footer>
-            <a href="https://www.facebook.com/Erdodif/" target="_blank">
-                Erdődi Fülöp (aka. Kotlin)
-            </a>
-            <div>
-                ZHS9U7
+        <div>
+            <h4>
+                ELTE - Disclaimer
+            </h4>
+            <p>
+                Ez az oldal egy informatív bemutatkozó, valamint a IP-18WF1EG WebFejlesztés tantárgy projekt oldala.
+                Az oldal tartalmi követelményei elérhetők a tantárgy oldalán.
+            </p>
+        </div>
+        <div>
+            <h4>
+                Linkek
+            </h4>
+            <div class="footer-link-holder">
+                <a href="https://github.com/Erdodif" title="Github"><img src="../res/icons/assets/github.svg"
+                        alt="Github" class="color-invertable"></a>
+                <a href="https://www.facebook.com/Erdodif/" title="Facebook"><img src="../res/icons/assets/facebook.svg"
+                        alt="Facebook" class="color-invertable"></a>
+                <a href="mailto:erdodif@gmail.com" title="E-mail"><img src="../res/icons/assets/email.svg" alt="E-mail"
+                        class="color-invertable"></a>
             </div>
-            <a href="https://www.inf.elte.hu" target="_blank">ELTE - IK</a>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 
 </html>
