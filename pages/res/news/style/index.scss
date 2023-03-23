@@ -1,0 +1,17 @@
+.timestamp{
+    font-size: .675em;
+    filter: opacity(.7);
+}
+h3{
+    margin-block:.5em;
+}
+hr{
+    max-width: 60em;
+    margin-inline:auto;
+}
+main{
+    margin-block-end: 3em;
+}
+main img{
+    border: .275em solid var(--primary);
+}

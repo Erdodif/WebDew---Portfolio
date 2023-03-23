@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Erdődi Fülöp (ZHS9U7)">
+    <meta name="description" content="WebDev Projekt - Kotlin hírportálja">
+    <meta name="date.created" content="2023-03-23">
+    <meta name="date.available" content="2023-03-25">
+    <link rel="shortcut icon" href="../res/icons/maskable/maskable_icon.png" type="image/x-icon">
+    <meta name="theme-color" content="#0e8388">
+    <title>Kotlin hírportálja</title>
+    <link rel="apple-touch-icon" href="../res/icons/maskable/maskable_icon.png">
+    <link rel="stylesheet" href="./res/news/style/index.css" />
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="../style/checker.css">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/nav.css">
+    <link rel="stylesheet" href="../style/paragraph.css">
+    <link rel="stylesheet" href="../style/holders.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/button.css">
+    <script src="../logic/index.js"></script>
+</head>
+
+<body>
+    <nav id="menu" tabindex="-10">
+        <button id="menu-toogle" tabindex="0" accesskey="m">
+            <picture data-state="hamburger" class="color-invertable">
+                <source src="../res/icons/assets/hamburger-menu-icon.png">
+                <img src="../res/icons/assets/hamburger-menu-icon.svg" alt="Menü">
+            </picture>
+            <picture data-state="back" class="color-invertable">
+                <source src="../res/icons/assets/back_arrow_icon.png">
+                <img src="../res/icons/assets/back_arrow_icon.svg" alt="Menü">
+            </picture>
+        </button>
+        <ul>
+            <li>
+                <a href="../index.html">
+                    <img src="../res/icons/assets/personal.webp" alt="Personal icon" loading="lazy">
+                </a>
+            </li>
+            <li>
+                <a href="../index.html" title="Főoldal" target="_self" accesskey="F">Főoldal</a>
+            </li>
+            <li>
+                <a href="./news.html" title="Hírek és Történetek" target="_self" accesskey="H">Hírek</a>
+            </li>
+            <li>
+                <a href="./rumadai.html" title="Rumadai - Elképzeléstől a megvalósításig" target="_self"
+                    accesskey="R">Rumadai</a>
+            </li>
+            <li>
+                <a href="./gallery.html" title="Galéria" target="_self" accesskey="G">Galéria</a>
+            </li>
+        </ul>
+        <span>
+            <label for="dark-mode" id="dark-mode-indicator">
+                <input type="checkbox" name="dark-mode" id="dark-mode" accesskey="S">
+            </label>
+        </span>
+    </nav>
+    <main>
+        <h1>
+            Hírek
+        </h1>
+        <section>
+            <h3>
+                Megnyílt a galéria <span class="timestamp">2023-03-26</span>
+            </h3>
+            <div class="image-left">
+                <div>
+                    <p>
+                        Megnyílt Kotlin fotógalériája. A képek gimnáziumi évektől egészen a közelmúlt eseményiig
+                        elevenítenek meg pillanatokat. Vess pillantást a modern fényképezés remekműveibe, lásd egy
+                        hobbifotós szemével a világot.
+                    </p>
+                    <a href="">
+                        <button class="designed">
+                            Ugrás a galériába
+                        </button>
+                    </a>
+                </div>
+                <img src="./res/news/galeria.webp" alt="Galéria">
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h3>
+                IK HÖK Bevonó tábor <span class="timestamp">2023-03-11</span>
+            </h3>
+            <div class="image-half">
+                <img src="./res/news/bevono_header.jpg" alt="Bevonó tábor">
+                <div>
+                    <p>
+                        Gólyatábor, Gólyahét, TSZH. Ha részt vettél már ezeknek a programoknak valamelyikén, akkor már
+                        elsőkézből láthattad a Szervező Bizottság munkájának végeredményét.
+                        Az egyetemen a tanulás mellett fontos a kikapcsolódás is, s utóbbit a Szervező Bizottság
+                        igyekszik
+                        rendezvényeken keresztül biztosítani. A Bizottság szekcióján
+                        megmutatjuk, hogy mi kell egy sikeres rendezvény létrejöttéhez.
+                        Gyere el a BevonóTáborba, ismerd meg a Bizottságok munkáját, csatlakozz a Hallgatói Önkormányzat
+                        munkájához!
+                    </p>
+                    <a href="https://bit.ly/jegy_bevono23">
+                        <button class="designed">
+                            Jegyvásárlás
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h3>
+                HabzIk <span class="timestamp">2023-03-03</span>
+            </h3>
+            <div class="image-left">
+                <div>
+                    <p>
+                        Kedves Hallgatók!<br>
+                        Szeretettel meghívunk titeket a 2023-as tavaszi félév szemeszternyitó bulijára!
+                        Eleged van a félévkezdés gondjaiból? Hiányoznának a haverok, mert olyan hosszú volt a tél?
+                        Akkor itt a helyed közöttünk!
+                        Bulizzunk egy jót március 3-án a KCsSK-ban a HabzIK - Retró/Sörpong-esten!
+                    </p>
+                    <a href="https://www.facebook.com/events/1155855791790589" target="_blank">
+                        <button class="designed">
+                            Tovább az eseményre
+                        </button>
+                    </a>
+                </div>
+                <img src="res/rumadai/images/HabzIk.jpg" alt="HabzIK" title="HabzIK esemény 2023 Mácrius 3">
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h3>
+                Egyetemek kupája <span class="timestamp">2023-02-16</span>
+            </h3>
+            <div class="image-right">
+                <img src="./res/news/egyetemek_kupaja.jpg" alt="Egyetemek kupája">
+                <div>
+                    <p>
+                        2023. március 2-4. között 14. alkalommal kerül megrendezésre a Kárpát-medencei Egyetemek Kupája
+                        Budapesten! 🤩
+                        Az esemény keretein belül 8 sportágban, 3 napon keresztül, közel 1500 egyetemistával
+                        sportolhattok együtt, a Kárpát-medence teljes területéről!💪💪
+                        Nevezhettek futás, futsal, kosárlabda, röplabda, asztalitenisz, alumni foci, darts és sakk
+                        számban is.
+                    </p>
+                    <a
+                        href="https://kekbudapest.hu/2023/01/26/elindult-a-nevezes-a-2023-as-kek-re/?fbclid=IwAR2uTn4LGaC4pMn87w41MwO7vCVWY8Csw5Zo8P23qUqAbyIbq8pksZ5JHKg">
+                        <button class="designed">
+                            További részletek
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="project-drawer">
+            <div>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h4>
+                Fun Fact
+            </h4>
+            <p id="fun-fact">
+                Több FunFact-et láthatsz, ha online módban böngészel...
+            </p>
+            <button id="next-fun-fact" class="designed inverted">
+                Következő
+            </button>
+        </div>
+        <div>
+            <h4>
+                ELTE - Disclaimer
+            </h4>
+            <p>
+                Ez az oldal egy informatív bemutatkozó, valamint a IP-18WF1EG WebFejlesztés tantárgy projekt oldala.
+                Az oldal tartalmi követelményei elérhetők a tantárgy oldalán.
+            </p>
+        </div>
+        <div>
+            <h4>
+                Linkek
+            </h4>
+            <div class="footer-link-holder">
+                <a href="https://github.com/Erdodif" title="Github"><img src="../res/icons/assets/github.svg"
+                        alt="Github" class="color-invertable"></a>
+                <a href="https://www.facebook.com/Erdodif/" title="Facebook"><img src="../res/icons/assets/facebook.svg"
+                        alt="Facebook" class="color-invertable"></a>
+                <a href="mailto:erdodif@gmail.com" title="E-mail"><img src="../res/icons/assets/email.svg" alt="E-mail"
+                        class="color-invertable"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
