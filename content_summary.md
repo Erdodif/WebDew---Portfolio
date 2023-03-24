@@ -1,5 +1,9 @@
 # Tartalmi összesítő Erdődi Fülöp (ZHS9U7) IP-18WF1EG WebFejlesztés
 
+> A felhasznált képek a méretükre való tekintettel a jelen pdf mellé csatolva van
+>
+> Egy videó van,megjelölve, hivatkozással
+
 ## Navigáció
 
 - \[Kép - főoldalra\]
@@ -160,6 +164,8 @@ Kotlin out.
 
 It's alright, 'cause we never say goodbye...
 
+[\[Videó - https://www.youtube.com/watch?v=yPGGr_4c1LU\]](https://www.youtube.com/watch?v=yPGGr_4c1LU)
+
 ---
 
 ## Hírek
@@ -202,3 +208,5 @@ Szeretettel meghívunk titeket a 2023-as tavaszi félév szemeszternyitó bulij�
 | Textarea       | Megjegyzés tartalma                     |
 | Radio          | publikus vagy privát hozzászólás legyen |
 | Checkbox       | E-mail értesítést kérek                 |
+| Submit | Beküldés |
+| Reset  | Visszaállítás |
