@@ -14,12 +14,16 @@ footer {
     background-color: var(--secondary-variant);
     div{
         position: relative;
+        &:nth-child(2){
+            isolation: isolate;
+        }
     }
     @media only screen and (min-width: 55rem) {
         display: grid;
         grid-template-columns: 2fr 3fr 2fr;
         grid-template-rows: 1fr;
         > div:nth-child(2)::before {
+            z-index: -1;
             box-sizing: border-box;
             position: absolute;
             top: 15%;
@@ -42,6 +46,7 @@ footer {
             display: block;
         }
         & > div:nth-child(2)::before {
+            z-index: -1;
             content: unset;
         }
     }
@@ -54,6 +59,7 @@ footer {
             display: block;
         }
         & > div:nth-child(2)::before {
+            z-index: -1;
             content: unset;
         }
         & > div:nth-child(2) {
