@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Erdődi Fülöp (ZHS9U7)">
+    <meta name="description" content="WebDev Projekt - Kotlin hírportálja">
+    <meta name="date.created" content="2023-03-23">
+    <meta name="date.available" content="2023-03-25">
+    <link rel="shortcut icon" href="../res/icons/maskable/maskable_icon.png" type="image/x-icon">
+    <meta name="theme-color" content="#0e8388">
+    <title>Kotlin hírportálja</title>
+    <link rel="apple-touch-icon" href="../res/icons/maskable/maskable_icon.png">
+    <link rel="stylesheet" href="./res/gallery/style/index.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="../style/checker.css">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/nav.css">
+    <link rel="stylesheet" href="../style/paragraph.css">
+    <link rel="stylesheet" href="../style/holders.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/button.css">   
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="../logic/index.js"></script>
+    <script src="./res/gallery/logic/animator.js"></script>
+</head>
+
+<body>
+    <nav id="menu" tabindex="-10">
+        <button id="menu-toogle" tabindex="0" accesskey="m">
+            <picture data-state="hamburger" class="color-invertable">
+                <source srcset="../res/icons/assets/hamburger-menu-icon.png">
+                <img src="../res/icons/assets/hamburger-menu-icon.svg" alt="Menü">
+            </picture>
+            <picture data-state="back" class="color-invertable">
+                <source srcset="../res/icons/assets/back_arrow_icon.png">
+                <img src="../res/icons/assets/back_arrow_icon.svg" alt="Menü">
+            </picture>
+        </button>
+        <ul>
+            <li>
+                <a href="../index.html">
+                    <img src="../res/icons/assets/personal.webp" alt="Personal icon" loading="lazy">
+                </a>
+            </li>
+            <li>
+                <a href="../index.html" title="Főoldal" target="_self" accesskey="F">Főoldal</a>
+            </li>
+            <li>
+                <a href="./news.html" title="Hírek és Történetek" target="_self" accesskey="H">Hírek</a>
+            </li>
+            <li>
+                <a href="./rumadai.html" title="Rumadai - Elképzeléstől a megvalósításig" target="_self"
+                    accesskey="R">Rumadai</a>
+            </li>
+            <li>
+                <a href="./gallery.html" title="Galéria" target="_self" accesskey="G">Galéria</a>
+            </li>
+        </ul>
+        <span>
+            <label for="dark-mode" id="dark-mode-indicator">
+                <input type="checkbox" name="dark-mode" id="dark-mode" accesskey="S">
+            </label>
+        </span>
+    </nav>
+    <main>
+        <h1>
+            Galéria
+        </h1>
+        <div id="lottie-holder">
+        </div>
+        <section class="masonry">
+
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h4>
+                Fun Fact
+            </h4>
+            <p id="fun-fact">
+                Több FunFact-et láthatsz, ha online módban böngészel...
+            </p>
+            <button id="next-fun-fact" class="designed inverted">
+                Következő
+            </button>
+        </div>
+        <div>
+            <h4>
+                ELTE - Disclaimer
+            </h4>
+            <p>
+                Ez az oldal egy informatív bemutatkozó, valamint a IP-18WF1EG WebFejlesztés tantárgy projekt oldala.
+                Az oldal tartalmi követelményei elérhetők a tantárgy oldalán.
+            </p>
+        </div>
+        <div>
+            <h4>
+                Linkek
+            </h4>
+            <div class="footer-link-holder">
+                <a href="https://github.com/Erdodif" title="Github"><img src="../res/icons/assets/github.svg"
+                        alt="Github" class="color-invertable"></a>
+                <a href="https://www.facebook.com/Erdodif/" title="Facebook"><img src="../res/icons/assets/facebook.svg"
+                        alt="Facebook" class="color-invertable"></a>
+                <a href="mailto:erdodif@gmail.com" title="E-mail"><img src="../res/icons/assets/email.svg" alt="E-mail"
+                        class="color-invertable"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
