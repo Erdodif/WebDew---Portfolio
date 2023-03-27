@@ -5,9 +5,9 @@ $col-gap-big: 0.225em;
 $col-gap-mid: 0.475em;
 $col-gap-smol: 1.575em;
 
-@media only screen and (min-width:55rem) {
-    section.masonry{
-        margin-inline:auto;
+@media only screen and (min-width: 55rem) {
+    section.masonry {
+        margin-inline: auto;
         max-width: 120rem;
     }
 }
@@ -79,33 +79,21 @@ form {
             }
         }
         input[type="radio"]:checked ~ label {
-            &:focus-within::before,
-            &:focus-within::after {
-                content: none;
-            }
-            cursor:auto;
-            visibility: visible;
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            align-items: center;
-            justify-content: center;
-            left: 0em;
-            top: 10%;
-            max-height: 80%;
-            max-width: 50%;
+            isolation: auto;
             img {
-                cursor:grab;
-                position: relative;
+                visibility: visible;
+                position: absolute;
+                cursor: grab;
                 margin-inline: auto;
                 margin-block: auto;
-                max-width: 100%;
+                max-width: 45%;
                 max-height: 70%;
+                min-height: 10em;
+                min-width: 10em;
                 height: auto;
                 width: auto;
+                z-index: 101;
             }
-            z-index: 101;
         }
     }
     .comment {
@@ -115,24 +103,29 @@ form {
         z-index: -10;
         background: var(--primary);
         inset: 0;
-        .comment-form, input[type="reset"]{
-            z-index: 102;
-        }
     }
     &:has(input[type="radio"]:checked) {
-        #images{
+        #images {
             visibility: hidden;
         }
         .comment {
             visibility: visible;
             z-index: 100;
+            .comment-form {
+                background: none;
+                input[type="reset"] {
+                    z-index: 102;
+                }
+            }
         }
     }
 }
 
-body:has(input[type="radio"]:checked){
+body:has(input[type="radio"]:checked) {
     overflow-y: hidden;
-    main, nav, footer{
+    main,
+    nav,
+    footer {
         visibility: hidden;
     }
 }
