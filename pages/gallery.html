@@ -25,11 +25,10 @@
     <link rel="stylesheet" href="../style/button.css">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="../logic/index.js"></script>
-    <script src="./res/gallery/logic/animator.js"></script>
 </head>
 
 <body>
-    <nav id="menu" tabindex="-10">
+    <nav id="menu">
         <button id="menu-toogle" tabindex="0" accesskey="m">
             <picture data-state="hamburger" class="color-invertable">
                 <source srcset="../res/icons/assets/hamburger-menu-icon.png">
@@ -76,7 +75,7 @@
             <section class="masonry" id="images">
             </section>
             <div class="comment">
-
+                <input type="reset" value="Mégse" class="designed inverted">
             </div>
         </form>
     </main>
@@ -88,7 +87,7 @@
             <p id="fun-fact">
                 Több FunFact-et láthatsz, ha online módban böngészel...
             </p>
-            <button id="next-fun-fact" class="designed inverted">
+            <button id="next-fun-fact" class="designed inverted" tabindex="10000">
                 Következő
             </button>
         </div>
@@ -106,11 +105,11 @@
                 Linkek
             </h4>
             <div class="footer-link-holder">
-                <a href="https://github.com/Erdodif" title="Github"><img src="../res/icons/assets/github.svg"
+                <a href="https://github.com/Erdodif" title="Github" tabindex="10000"><img src="../res/icons/assets/github.svg"
                         alt="Github" class="color-invertable"></a>
-                <a href="https://www.facebook.com/Erdodif/" title="Facebook"><img src="../res/icons/assets/facebook.svg"
+                <a href="https://www.facebook.com/Erdodif/" title="Facebook" tabindex="10000"><img src="../res/icons/assets/facebook.svg"
                         alt="Facebook" class="color-invertable"></a>
-                <a href="mailto:erdodif@gmail.com" title="E-mail"><img src="../res/icons/assets/email.svg" alt="E-mail"
+                <a href="mailto:erdodif@gmail.com" title="E-mail" tabindex="10000"><img src="../res/icons/assets/email.svg" alt="E-mail"
                         class="color-invertable"></a>
             </div>
         </div>

@@ -6,6 +6,7 @@ $col-gap-mid: 0.475em;
 $col-gap-smol: 1.575em;
 
 form {
+    width: 100%;
     #images {
         padding-inline: 5em;
         width: auto;
@@ -47,7 +48,27 @@ form {
             visibility: hidden;
         }
         label {
+            isolation: isolate;
+            position: relative;
             cursor: pointer;
+            &:focus-within{
+                &::after, &::before{
+                    position: absolute;
+                    content: " ";
+                    left:unset;
+                    right: 0;
+                    bottom: unset;
+                    border-radius: 0 0 0 100%;
+                }
+                &::before{
+                    z-index: 1;
+                    border: .675em solid var(--primary);
+                }
+                &::after{
+                    z-index: 2;
+                    border: .525em solid var(--secondary);
+                }
+            }
         }
     }
     .comment {
@@ -55,6 +76,9 @@ form {
         background: var(--primary);
         height: 30rem;
         width: 100%;
+        input[type="reset"]{
+            
+        }
     }
     &:has(input[type="radio"]:checked) .comment {
         visibility: visible;
