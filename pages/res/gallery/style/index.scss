@@ -5,6 +5,13 @@ $col-gap-big: 0.225em;
 $col-gap-mid: 0.475em;
 $col-gap-smol: 1.575em;
 
+@media only screen and (min-width:55rem) {
+    section.masonry{
+        margin-inline:auto;
+        max-width: 120rem;
+    }
+}
+
 form {
     width: 100%;
     #images {
@@ -85,9 +92,9 @@ form {
             align-items: center;
             justify-content: center;
             left: 0em;
-            top: 0em;
-            height: 100%;
-            width: 50%;
+            top: 10%;
+            max-height: 80%;
+            max-width: 50%;
             img {
                 cursor:grab;
                 position: relative;
@@ -108,7 +115,7 @@ form {
         z-index: -10;
         background: var(--primary);
         inset: 0;
-        .comment-form{
+        .comment-form, input[type="reset"]{
             z-index: 102;
         }
     }
@@ -125,4 +132,7 @@ form {
 
 body:has(input[type="radio"]:checked){
     overflow-y: hidden;
+    main, nav, footer{
+        visibility: hidden;
+    }
 }
