@@ -40,47 +40,89 @@ form {
                 margin-block-end: calc($col-gap-smol / 2);
             }
         }
-    }
-    .image-selection {
-        input[type="radio"] {
-            position: absolute;
-            left: -100%;
-            visibility: hidden;
-        }
-        label {
-            isolation: isolate;
-            position: relative;
-            cursor: pointer;
-            &:focus-within{
-                &::after, &::before{
-                    position: absolute;
-                    content: " ";
-                    left:unset;
-                    right: 0;
-                    bottom: unset;
-                    border-radius: 0 0 0 100%;
-                }
-                &::before{
-                    z-index: 1;
-                    border: .675em solid var(--primary);
-                }
-                &::after{
-                    z-index: 2;
-                    border: .525em solid var(--secondary);
+        .image-selection {
+            input[type="radio"] {
+                position: absolute;
+                left: -100%;
+                visibility: hidden;
+            }
+            label {
+                isolation: isolate;
+                position: relative;
+                cursor: pointer;
+                &:focus-within {
+                    &::after,
+                    &::before {
+                        position: absolute;
+                        content: " ";
+                        left: unset;
+                        right: 0;
+                        bottom: unset;
+                        border-radius: 0 0 0 100%;
+                    }
+                    &::before {
+                        z-index: 1;
+                        border: 0.675em solid var(--primary);
+                    }
+                    &::after {
+                        z-index: 2;
+                        border: 0.525em solid var(--secondary);
+                    }
                 }
             }
+        }
+        input[type="radio"]:checked ~ label {
+            &:focus-within::before,
+            &:focus-within::after {
+                content: none;
+            }
+            cursor:auto;
+            visibility: visible;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            left: 0em;
+            top: 0em;
+            height: 100%;
+            width: 50%;
+            img {
+                cursor:grab;
+                position: relative;
+                margin-inline: auto;
+                margin-block: auto;
+                max-width: 100%;
+                max-height: 70%;
+                height: auto;
+                width: auto;
+            }
+            z-index: 101;
         }
     }
     .comment {
         visibility: hidden;
+        position: absolute;
+        overflow-y: auto;
+        z-index: -10;
         background: var(--primary);
-        height: 30rem;
-        width: 100%;
-        input[type="reset"]{
-            
+        inset: 0;
+        .comment-form{
+            z-index: 102;
         }
     }
-    &:has(input[type="radio"]:checked) .comment {
-        visibility: visible;
+    &:has(input[type="radio"]:checked) {
+        #images{
+            visibility: hidden;
+        }
+        .comment {
+            visibility: visible;
+            z-index: 100;
+        }
     }
+}
+
+body:has(input[type="radio"]:checked){
+    overflow-y: hidden;
 }
