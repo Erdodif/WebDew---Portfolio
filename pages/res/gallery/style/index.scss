@@ -83,11 +83,14 @@ form {
             img {
                 visibility: visible;
                 position: absolute;
+                top: 1em;
+                left:1em;
+                bottom: 1em;
                 cursor: grab;
                 margin-inline: auto;
                 margin-block: auto;
-                max-width: 45%;
-                max-height: 70%;
+                max-width: 50vw;
+                max-height: 90vh;
                 min-height: 10em;
                 min-width: 10em;
                 height: auto;
@@ -101,8 +104,14 @@ form {
         position: absolute;
         overflow-y: auto;
         z-index: -10;
-        background: var(--primary);
+        background: var(--secondary-variant);
         inset: 0;
+    }
+    input[type="reset"]{
+        position: absolute;
+        top:0;
+        right: 0;
+        left:unset;
     }
     &:has(input[type="radio"]:checked) {
         #images {
