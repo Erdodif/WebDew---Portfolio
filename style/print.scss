@@ -1,0 +1,44 @@
+::root {
+    --primary: #000000;
+    --secondary: rgb(255, 255, 255);
+    --primary-variant: #4e4e4e;
+    --secondary-variant: #c6c6c6;
+}
+
+#menu,
+footer,
+hr,
+video,
+iframe,
+.footer,
+.non-printable {
+    display: none;
+}
+.designed {
+    display: none;
+}
+
+.main-image-holder {
+    max-width: 50%;
+    margin-inline: auto;
+}
+.image-holder {
+    display: none;
+}
+
+.image-left,
+.image-half,
+.image-center {
+    img {
+        max-width: 40%;
+    }
+}
+
+.card-header-image {
+    height: 7em;
+    width: 7em;
+    img {
+        height: 7em;
+        width: 7em;
+    }
+}
