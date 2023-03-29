@@ -1,0 +1,41 @@
+.input-holder {
+    width: 100%;
+    padding-inline:2em;
+    margin-block:1em;
+    input,
+    textarea {
+        width: 100%;
+        font-size: 1.2em;
+        background-color: var(--primary-variant);
+        outline: none;
+        border: 0.4ch solid var(--primary);
+        border-radius: 0.375em;
+        margin-block-start: 0.975em;
+    }
+    textarea{
+        resize: vertical;
+        min-height: 3em;
+    }
+    label {
+        color: var(--primary);
+        &.above {
+            margin-inline-start: .5em;
+            position: absolute;
+            padding-inline: 0.3em;
+            border-radius: 0.275em;
+            border-block-end: 0.4ch solid var(--primary);
+            background: var(--secondary-variant);
+            &::before {
+                position: absolute;
+            }
+        }
+    }
+    input[type="checkbox"]{
+        margin-inline-start: .5em;
+        width: fit-content;
+    }
+}
+
+input[type="submit"]{
+    margin-inline:auto;
+}

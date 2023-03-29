@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="../style/holders.css">
     <link rel="stylesheet" href="../style/footer.css">
     <link rel="stylesheet" href="../style/button.css">
+    <link rel="stylesheet" href="../style/form.css">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="../logic/index.js"></script>
 </head>
@@ -52,8 +53,8 @@
                 <a href="./news.html" title="Hírek és Történetek" target="_self" accesskey="H" tabindex="0">Hírek</a>
             </li>
             <li>
-                <a href="./rumadai.html" title="Rumadai - Elképzeléstől a megvalósításig" target="_self"
-                    accesskey="R" tabindex="0">Rumadai</a>
+                <a href="./rumadai.html" title="Rumadai - Elképzeléstől a megvalósításig" target="_self" accesskey="R"
+                    tabindex="0">Rumadai</a>
             </li>
             <li>
                 <a href="./gallery.html" title="Galéria" target="_self" accesskey="G" tabindex="0">Galéria</a>
@@ -76,7 +77,32 @@
             </section>
             <div class="comment">
                 <div class="comment-form">
-                    <input type="reset" value="Mégse" class="designed inverted">
+                    <h2>
+                        Hozzászólás beküldése
+                    </h2>
+                    <input type="reset" value="X" class="designed inverted">
+                    <div class="input-holder">
+                        <label for="i-commenter" class="above">
+                            E-mail
+                        </label>
+                        <input id="i-commenter" type="email" />
+                    </div>
+                    <div class="input-holder">
+                        <label for="i-comment" class="above">
+                            Hozzászólás
+                        </label>
+                        <textarea name="comment" id="i-comment"></textarea>
+                    </div>
+                    <div class="input-holder">
+                        <label for="i-hirlevel">
+                            Feliratkotok a hírlevélre
+                        </label>
+                        <input id="i-hirlevel" name="hirlevel" value="Feliratkotok a hírlevélre" type="checkbox" />
+                    </div>
+                    <div class="input-holder">
+                        <input type="submit" value="Beküldés" class="designed">
+                        <input type="reset" value="Mégse" class="designed inverted">
+                    </div>
                 </div>
             </div>
         </form>
