@@ -46,13 +46,13 @@ table.rumadai-table {
         grid-template-columns: 4fr 7fr;
         border-top: 0.125em solid var(--primary);
         td {
-            padding-block:.3ch;
+            padding-block: 0.3ch;
             &:nth-child(2n) {
                 text-align: center;
                 border-left: 0.125em dotted var(--primary);
             }
         }
-        &:first-child{
+        &:first-child {
             border-top: 0;
         }
     }
@@ -63,8 +63,18 @@ table.rumadai-table {
     max-height: 20rem;
     width: auto;
 }
-video{
+video {
     display: block;
-    margin-block:1em;
-    margin-inline:auto;
+    margin-block: 1em;
+    margin-inline: auto;
+}
+
+.lyrics {
+    max-width: 30em;
+    h3{
+        margin-inline:0;
+    }
+    p {
+        text-align: center;
+    }
 }
