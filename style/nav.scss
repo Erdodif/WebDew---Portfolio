@@ -79,11 +79,11 @@
                 height: 2em;
             }
         }
-        picture[data-state="back"]{
+        picture[data-state="back"], .data-back{
             cursor: pointer;
             display: none;
         }
-        picture[data-state="hamburger"]{
+        picture[data-state="hamburger"], .data-hamburger{
             cursor: pointer;
             display: block;
         }
@@ -93,10 +93,10 @@
             li:first-child{
                 display: none;
             }
-            picture[data-state="hamburger"]{
+            picture[data-state="hamburger"], .data-hamburger{
                 display: none;
             }
-            picture[data-state="back"]{
+            picture[data-state="back"], .data-back{
                 display: block;
             }
             font-size: 2em;

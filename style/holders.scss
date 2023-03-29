@@ -39,7 +39,7 @@
     }
 }
 
-section {
+section, .section {
     margin-inline: auto;
     margin-block:1em;
     max-width: 65em;
@@ -66,10 +66,6 @@ section {
         margin-inline: auto;
         display: block;
     }
-}
-
-main {
-    //margin-inline: calc(1em + 3vw)
 }
 
 .card-holder {
