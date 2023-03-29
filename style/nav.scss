@@ -41,9 +41,8 @@
                     height: 2em;
                     width: auto;
                     aspect-ratio: 1 / 1;
-                    border: .125em solid var(--primary);
+                    border: 0.125em solid var(--primary);
                     border-radius: 100%;
-                    background: seashell;
                 }
             }
         }
@@ -51,7 +50,7 @@
     span {
         display: grid;
         grid-template-columns: 1fr;
-        padding-inline:1em;
+        padding-inline: 1em;
     }
     #menu-toogle {
         display: none;
@@ -63,7 +62,7 @@
         background-color: var(--secondary-variant);
         z-index: 999 !important;
         position: fixed;
-        top:0;
+        top: 0;
         ul,
         span {
             display: none;
@@ -79,24 +78,28 @@
                 height: 2em;
             }
         }
-        picture[data-state="back"], .data-back{
+        picture[data-state="back"],
+        .data-back {
             cursor: pointer;
             display: none;
         }
-        picture[data-state="hamburger"], .data-hamburger{
+        picture[data-state="hamburger"],
+        .data-hamburger {
             cursor: pointer;
             display: block;
         }
-        &.focused{
+        &.focused {
             height: 100vh;
             overflow-y: auto;
-            li:first-child{
+            li:first-child {
                 display: none;
             }
-            picture[data-state="hamburger"], .data-hamburger{
+            picture[data-state="hamburger"],
+            .data-hamburger {
                 display: none;
             }
-            picture[data-state="back"], .data-back{
+            picture[data-state="back"],
+            .data-back {
                 display: block;
             }
             font-size: 2em;
@@ -148,7 +151,7 @@
     picture,
     img {
         position: absolute;
-        inset:0;
+        inset: 0;
         height: 2em;
         width: 2em;
     }
@@ -175,4 +178,16 @@
             font-weight: bold;
         }
     }
+}
+
+#menu >ul li #personal {
+    background-image: url(../res/icons/assets/personal.webp);
+    background-position: center;
+    background-size: contain;
+    display: block;
+    height: 2em;
+    width: 2em;
+    margin-block: auto;
+    border: 0.125em solid var(--primary);
+    border-radius: 100%;
 }

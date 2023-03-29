@@ -1,4 +1,5 @@
-h1,h2,h3,h4,h5,h6,p,td,th{
+h1,h2,h3,h4,h5,h6,p,td,th,summary{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: var(--primary);
 }
 h1,h2{
@@ -13,7 +14,6 @@ p{
     max-width: 60rem;
     margin-inline:auto;
     font-size: 1.125em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-inline:2em;
     margin-block:1em;
     text-align: justify;
