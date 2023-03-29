@@ -107,9 +107,6 @@ form {
             justify-content: center;
         }
         @media only screen and (max-width: 55rem) {
-            label {
-                background-color: red !important;
-            }
             display: grid;
             max-width: 33rem;
             margin-inline: auto;
@@ -117,9 +114,6 @@ form {
             grid-template-rows: auto auto;
         }
         @media only screen and (max-width: 33rem) {
-            label {
-                background-color: yellow !important;
-            }
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
