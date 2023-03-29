@@ -76,7 +76,7 @@
             </figcaption>
             <div id="lottie-holder">
             </div>
-            <form action="">
+            <form action="mailto:erdodif@gmail.com" method="get" enctype="text/plain">
                 <section class="masonry" id="images">
                 </section>
                 <div class="comment">
@@ -84,18 +84,19 @@
                         <h2>
                             Hozzászólás beküldése
                         </h2>
+                        <input type="hidden" name="subject" value="Hozzászólás_érkezett">
                         <input type="reset" value="X" class="designed inverted">
                         <div class="input-holder">
                             <label for="i-commenter" class="above">
                                 E-mail
                             </label>
-                            <input id="i-commenter" type="email" maxlength="255" />
+                            <input name="Kommentáló" id="i-commenter" type="email" maxlength="255" />
                         </div>
                         <div class="input-holder">
                             <label for="i-comment" class="above">
                                 Hozzászólás
                             </label>
-                            <textarea name="comment" id="i-comment" maxlength="1024"></textarea>
+                            <textarea name="body" id="i-comment" maxlength="1024"></textarea>
                         </div>
                         <div class="input-holder">
                             <label for="i-hirlevel">
