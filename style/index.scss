@@ -30,6 +30,12 @@
             filter: invert(0.8);
         }
     }
+    @media (prefers-contrast: more) {
+        --primary: #000000;
+        --secondary: rgb(255, 255, 255);
+        --primary-variant: #4e4e4e;
+        --secondary-variant: #c6c6c6;
+    }
 }
 
 html,
@@ -48,8 +54,16 @@ body {
         font-size: 16px;
     }
 }
-body{
+body {
     @media only screen and (max-width: 33rem) {
-        padding-block-start:3em;
+        padding-block-start: 3em;
+    }
+}
+
+#to-main-content {
+    margin-block-start: -4em;
+    position: absolute;
+    &:focus-within {
+        margin-block-start: 1em;
     }
 }
