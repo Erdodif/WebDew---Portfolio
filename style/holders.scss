@@ -39,29 +39,30 @@
     }
 }
 
-section, .section {
+section,
+.section {
     margin-inline: auto;
-    margin-block:1em;
+    margin-block: 1em;
     max-width: 65em;
-    hr{
+    hr {
         border-color: var(--primary);
-        margin-block:1em;
+        margin-block: 1em;
         max-width: 90%;
-        margin-inline:auto;
+        margin-inline: auto;
     }
     @media only screen and (max-width: 55rem) {
-        margin-inline: calc(.525em + 1vw);
-        hr{
+        margin-inline: calc(0.525em + 1vw);
+        hr {
             max-width: 95%;
         }
     }
     @media only screen and (max-width: 33rem) {
         margin-inline: 2ch;
-        hr{
+        hr {
             max-width: 100%;
         }
     }
-    iframe{
+    iframe {
         max-width: 100%;
         margin-inline: auto;
         display: block;
@@ -84,15 +85,25 @@ section, .section {
         align-items: center;
         justify-content: baseline;
         break-inside: avoid;
-        .card-header-image img {
-            border-radius: 100%;
-            border: 0.225em solid var(--primary);
-            max-width: 10em;
-            width: auto;
-            object-fit: cover;
-            object-position: center;
-            image-rendering: optimizeQuality;
-            aspect-ratio: 1 / 1;
+        .card-header-image {
+            img {
+                border-radius: 100%;
+                border: 0.225em solid var(--primary);
+                max-width: 10em;
+                width: auto;
+                object-fit: cover;
+                object-position: center;
+                image-rendering: optimizeQuality;
+                aspect-ratio: 1 / 1;
+            }
+            @supports (-moz-appearance: none) {
+                height: 10em;
+                width: 10em;
+                img{
+                    height: 10em;
+                    width: 10em;
+                }
+            }
         }
     }
     @media only screen and (max-width: 55rem) {
@@ -166,7 +177,9 @@ section, .section {
         }
     }
 }
-.image-left, .image-right, .image-half {
+.image-left,
+.image-right,
+.image-half {
     max-width: 60em;
     margin-inline: auto;
     display: grid;
@@ -190,21 +203,21 @@ section, .section {
             padding-inline: 0.5em;
         }
     }
-    div{
+    div {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 }
 
-.image-left{
+.image-left {
     grid-template-columns: 5fr 3fr;
 }
 
-.image-right{
+.image-right {
     grid-template-columns: 3fr 5fr;
 }
 
-.image-half{
+.image-half {
     grid-template-columns: 1fr 1fr;
 }
