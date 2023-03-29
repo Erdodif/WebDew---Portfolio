@@ -8,22 +8,6 @@
     "scope": "/",
     "theme_color": "#2c3333",
     "description": "Webfejlesztés oldal - Erdődi Fülöp (ZHS9U7) 2023. tavaszi félév",
-    "screenshots": [
-        {
-            "src": "/images/screenshot1.png",
-            "type": "image/png",
-            "sizes": "540x720",
-            "form_factor": "narrow",
-            "description": "TODO"
-        },
-        {
-            "src": "/images/screenshot2.jpg",
-            "type": "image/jpg",
-            "sizes": "720x540",
-            "form_factor": "wide",
-            "description": "TODO"
-        }
-    ],
     "icons": [
         {
             "src":"./res/icons/maskable/maskable_icon.png",
